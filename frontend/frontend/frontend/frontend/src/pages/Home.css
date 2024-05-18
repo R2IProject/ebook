@@ -1,0 +1,17 @@
+.home-container {
+    background-image: url('../assets/high-angle-books-stack-with-copy-space.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 92vh;
+    display: flex;
+}
+
+.home-content {
+    padding: 5rem;
+}
+
+.home-content h1,
+.home-content h2 {
+    text-align: left; /* Aligning the text to the left */
+    color: white;
+}
