@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Recomendations.css'
 
 function Card({ book }) {
     return (
