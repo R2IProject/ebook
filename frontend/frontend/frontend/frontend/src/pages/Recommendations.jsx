@@ -28,7 +28,7 @@ function Recommendations() {
     }, []);
 
     return (
-        <div>
+        <div className="Rekomen">
             <h1>Recommended Books</h1>
             <div className="cards-container">
                 {books.map(book => (

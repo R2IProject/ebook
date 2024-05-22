@@ -1,0 +1,31 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds space between cards */
+
+}
+
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Ensures content inside the card is stacked vertically */
+    align-items: center; /* Center align the content inside the card */
+    padding: 1rem;
+    width: calc(50% - 1rem); /* Ensures two cards fit side by side with a gap */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    
+}
+
+.card img {
+    max-width: 100%;
+    height: auto; /* Keeps the image aspect ratio */
+}
+
+.card-content {
+    text-align: center;
+    margin-top: 1rem; /* Adds space between image and text */
+}
+
+.Rekomen h1{
+    color: black;
+}

@@ -29,7 +29,7 @@ function Discover() {
             <div>
                 {books.map(book => (
                     <div key={book.id} className="book">
-                        <h2>{book.name}</h2>
+                        <h2>{book.tittle}</h2>
                         <p>{book.author}</p>
                         <p>{book.description}</p>
                     </div>
