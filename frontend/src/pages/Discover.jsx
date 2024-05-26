@@ -26,7 +26,7 @@ function Discover() {
                 placeholder="Search for a book" 
             />
             <button onClick={handleSearch}>Search</button>
-            <div>
+            <div className='back'>
                 {books.map(book => (
                     <div key={book.id} className="book">
                         <img src={book.image_url} alt={book.title} />

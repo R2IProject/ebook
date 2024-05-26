@@ -1,0 +1,38 @@
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds space between cards */
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.card-image {
+    object-fit: cover;
+    display: flex;
+    max-width: 20%;
+}
+
+.card-content {
+    padding: 10px;
+    width: 65%;
+}
+.card-title,
+.card-text { 
+    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rekomen h1 {
+    color: black;
+    background-color: #0000;
+}

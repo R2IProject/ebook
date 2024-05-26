@@ -1,8 +1,12 @@
 .dark-container {
-    background-color: #2C394B;
+    background-color: black;
     color: black;
     padding: 2rem;
 
+}
+
+.back{
+    background-color: black;
 }
 
 input[type="text"] {
@@ -25,14 +29,6 @@ button {
 
 button:hover {
     background-color: #666;
-}
-
-.book {
-    background-color: #1e1e1e;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .book h2 {

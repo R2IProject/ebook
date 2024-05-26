@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './Recomendations.css'
+import styles from './Recommendations.module.css';
 
 function Card({ book }) {
     return (
-        <div className="card">
-            <div className="cardcontainer">
-            <img src={book.image_url} alt={book.title} />
-            <div className="card-content">
-                <h2>{book.title}</h2>
-                <p>By {book.author}</p>
-            </div>
+        <div class={styles.card}>
+            <div class={styles['card-image']}><img src={book.image_url} alt={book.title} /></div>
+            <div class={styles['card-content']}>
+                <h2 class={styles['card-title']}>{book.title}</h2>
+                <p class={styles['card-text']}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class={styles['card-text']}>{book.author}</p>
             </div>
         </div>
-        
     );
 }
 
@@ -31,9 +29,9 @@ function Recommendations() {
     }, []);
 
     return (
-        <div className="Rekomen">
-            <h1>Recommended Books</h1>
-            <div className="cards-container">
+        <div className={styles.Rekomen}>
+            <center><h1>Recomended Books</h1></center>
+            <div className={styles['cards-container']}>
                 {books.map(book => (
                     <Card key={book.id} book={book} />
                 ))}
